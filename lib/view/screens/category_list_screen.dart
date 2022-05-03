@@ -1,5 +1,6 @@
 import 'package:building_buddy/model/categoryType_model.dart';
 import 'package:building_buddy/utils/widget_functions.dart';
+import 'package:building_buddy/view/screens/productList_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -70,31 +71,36 @@ class CategoryListScreen extends StatelessWidget {
                   scrollDirection: Axis.vertical,
                   itemBuilder: (BuildContext context,int index){
                     categoryTypeModel categoryTypeModelList = categoryTypeList[index];
-                    return Container(
-                      width: MediaQuery.of(context).size.width,
-                      height: 60.h,
-                      padding: EdgeInsets.only(left: 20.h,right: 20.h,),
-                      margin: EdgeInsets.only(left: 16.h,right: 16.h,bottom: 11.h),
-                      decoration: BoxDecoration(
-                        color: AppTheme.appColor4,
-                        borderRadius: BorderRadius.circular(5.0),
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            categoryTypeModelList.categoryType,
-                            style: TextStyle(
-                                fontSize: 18.sp,
-                                color: AppTheme.appColor,
-                                fontWeight: FontWeight.w400),
-                          ),
-                          Icon(
-                            Icons.arrow_forward_ios,
-                            color: AppTheme.appColor,
-                            size: 16.h,
-                          ),
-                        ],
+                    return GestureDetector(
+                      onTap: (){
+                        Get.to(ProductListScreen());
+                      },
+                      child: Container(
+                        width: MediaQuery.of(context).size.width,
+                        height: 60.h,
+                        padding: EdgeInsets.only(left: 20.h,right: 20.h,),
+                        margin: EdgeInsets.only(left: 16.h,right: 16.h,bottom: 11.h),
+                        decoration: BoxDecoration(
+                          color: AppTheme.appColor4,
+                          borderRadius: BorderRadius.circular(5.0),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              categoryTypeModelList.categoryType,
+                              style: TextStyle(
+                                  fontSize: 18.sp,
+                                  color: AppTheme.appColor,
+                                  fontWeight: FontWeight.w400),
+                            ),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              color: AppTheme.appColor,
+                              size: 16.h,
+                            ),
+                          ],
+                        ),
                       ),
                     );
                   }

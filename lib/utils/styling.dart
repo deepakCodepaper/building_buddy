@@ -15,11 +15,11 @@ class AppTheme {
   static const Color appColor2 = Color(0xffDDDDDD);
   static const Color appColor3 = Color(0xffE84103);
   static const Color appColor4 = Color(0xffEEEEEE);
-  static const Color appColor5 = Color(0xffECECEC);
-  static const Color appColor6 = Color(0xffFFD700);
-  static const Color appColor7 = Color(0xffE3F1EA);
-  static const Color appColor8 = Color(0xff6D9773);
-  static const Color appColor9 = Color(0xff3AA574);
+  static const Color appColor5 = Color(0xffE8E8E8);
+  static const Color appColor6 = Color(0xffDEEAFF);
+  static const Color appColor7 = Color(0xff1963E5);
+  static const Color appColor8 = Color(0xffA1A1A1);
+  static const Color appColor9 = Color(0xff3030FB);
   static const Color appColor10 = Color(0xffF33737);
   static const Color appColor11 = Color(0xffF1F3F5);
   static const Color appColor12 = Color(0xffF6AE3F);

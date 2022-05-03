@@ -1,8 +1,11 @@
 import 'package:building_buddy/utils/styling.dart';
+import 'package:building_buddy/view/screens/elite_program_screen.dart';
 import 'package:building_buddy/view/screens/home_screen.dart';
 import 'package:building_buddy/view/screens/login_screen.dart';
+import 'package:building_buddy/view/screens/menu_screen.dart';
 import 'package:building_buddy/view/screens/signup_screen.dart';
 import 'package:building_buddy/view/screens/verification_screen.dart';
+import 'package:building_buddy/view/screens/wishlist_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -18,9 +21,9 @@ class _BottomNavigationState extends State<BottomNavigation_Screen> {
   final screens = [
     HomeScreen(),
     VerificationScreen(),
-    SignupScreen(),
-    LoginScreen(),
-    VerificationScreen(),
+    WishlistScreen(),
+    EliteProgramScreen(),
+    MenuScreen(),
   ];
 
   @override
